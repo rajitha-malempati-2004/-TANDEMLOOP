@@ -1,0 +1,14 @@
+program that generates the first a odd numbers when given an integer input.
+
+# Generate odd number series up to 'a' terms
+
+a = int(input("Enter a number: "))
+
+# Method 1: Using loop
+print("Output:", end=" ")
+for i in range(a):
+    print(2 * i + 1, end=" ")
+
+# Method 2 (optional): Using list comprehension
+# result = [2 * i + 1 for i in range(a)]
+# print("Output:", ", ".join(map(str, result)))
