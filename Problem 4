@@ -1,0 +1,14 @@
+# Problem-4: Count multiples of numbers from 1 to 9
+
+numbers = [1, 2, 8, 9, 12, 46, 76, 82, 15, 20, 30]
+
+# Initialize dictionary for counts
+result = {i: 0 for i in range(1, 10)}
+
+# Check divisibility
+for n in numbers:
+    for i in range(1, 10):
+        if n % i == 0:
+            result[i] += 1
+
+print(result)
