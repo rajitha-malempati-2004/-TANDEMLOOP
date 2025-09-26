@@ -1,0 +1,12 @@
+# Problem-3: Generate odd number series up to largest odd <= a
+
+a = int(input("Enter a number: "))
+
+# If even, reduce by 1
+limit = a if a % 2 != 0 else a - 1
+
+# Generate odd numbers up to 'limit'
+result = [2 * i + 1 for i in range(limit)]
+
+# Print result
+print("Output:", ", ".join(map(str, result)))
